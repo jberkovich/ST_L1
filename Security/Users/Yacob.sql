@@ -1,0 +1,3 @@
+﻿CREATE USER [Yacob]
+  WITHOUT LOGIN
+GO

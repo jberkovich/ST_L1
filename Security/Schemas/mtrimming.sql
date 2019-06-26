@@ -1,0 +1,2 @@
+﻿CREATE SCHEMA [mtrimming] AUTHORIZATION [dbo]
+GO

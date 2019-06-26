@@ -1,0 +1,30 @@
+﻿CREATE TABLE [dbo].[TADSPNhours] (
+  [TADSPNhoursID] [int] IDENTITY,
+  [Start] [datetime] NOT NULL,
+  [SPN] [nvarchar](50) NOT NULL,
+  [TAD] [nvarchar](50) NOT NULL,
+  [Department] [nvarchar](500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+  [tDesc] [nvarchar](50) NULL,
+  [MonS] [datetime] NOT NULL CONSTRAINT [DF_TADSPNhours_MonS] DEFAULT ('08:00'),
+  [MonE] [datetime] NOT NULL CONSTRAINT [DF_TADSPNhours_MonE] DEFAULT ('20:00'),
+  [TueS] [datetime] NOT NULL CONSTRAINT [DF_TADSPNhours_TueS] DEFAULT ('08:00'),
+  [TueE] [datetime] NOT NULL CONSTRAINT [DF_TADSPNhours_TueE] DEFAULT ('20:00'),
+  [WedS] [datetime] NOT NULL CONSTRAINT [DF_TADSPNhours_WedS] DEFAULT ('08:00'),
+  [WedE] [datetime] NOT NULL CONSTRAINT [DF_TADSPNhours_WedE] DEFAULT ('20:00'),
+  [ThuS] [datetime] NOT NULL CONSTRAINT [DF_TADSPNhours_ThuS] DEFAULT ('08:00'),
+  [ThuE] [datetime] NOT NULL CONSTRAINT [DF_TADSPNhours_ThuE] DEFAULT ('20:00'),
+  [FriS] [datetime] NOT NULL CONSTRAINT [DF_TADSPNhours_FriS] DEFAULT ('08:00'),
+  [FriE] [datetime] NOT NULL CONSTRAINT [DF_TADSPNhours_FriE] DEFAULT ('20:00'),
+  [SatS] [datetime] NOT NULL CONSTRAINT [DF_TADSPNhours_SatS] DEFAULT ('08:00'),
+  [SatE] [datetime] NOT NULL CONSTRAINT [DF_TADSPNhours_SatE] DEFAULT ('13:00'),
+  [SunS] [datetime] NOT NULL CONSTRAINT [DF_TADSPNhours_SunS] DEFAULT ('23:59:58'),
+  [SunE] [datetime] NOT NULL CONSTRAINT [DF_TADSPNhours_SunE] DEFAULT ('23:59:59'),
+  [default] [bit] NOT NULL CONSTRAINT [DF_TADSPNhours_default] DEFAULT (0),
+  [active] [bit] NOT NULL CONSTRAINT [DF_TADSPNhours_active] DEFAULT (1),
+  [created] [datetime] NOT NULL CONSTRAINT [DF_TADSPNhours_created] DEFAULT (getdate()),
+  [comments] [varchar](8000) NOT NULL CONSTRAINT [DF_TADSPNhours_comments] DEFAULT (' '),
+  [userName] [varchar](50) NOT NULL CONSTRAINT [DF_TADSPNhours_userName] DEFAULT (' '),
+  CONSTRAINT [PK_TADSPNhours_1] PRIMARY KEY CLUSTERED ([TADSPNhoursID])
+)
+ON [PRIMARY]
+GO

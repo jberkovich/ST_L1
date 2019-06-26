@@ -1,0 +1,3 @@
+﻿CREATE USER [WEB_L3W-LGIns]
+  WITH PASSWORD = 'Type_Passw0rd_Here'
+GO

@@ -1,0 +1,2 @@
+﻿CREATE SCHEMA [Graham] AUTHORIZATION [dbo]
+GO

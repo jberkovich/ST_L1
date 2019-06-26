@@ -1,0 +1,3 @@
+﻿CREATE USER [Administrator]
+  WITHOUT LOGIN
+GO

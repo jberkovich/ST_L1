@@ -1,0 +1,2 @@
+﻿CREATE SCHEMA [Rapport] AUTHORIZATION [dbo]
+GO

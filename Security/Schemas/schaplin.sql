@@ -1,0 +1,2 @@
+﻿CREATE SCHEMA [schaplin] AUTHORIZATION [dbo]
+GO

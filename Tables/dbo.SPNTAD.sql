@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[SPNTAD] (
+  [SPNTADid] [int] IDENTITY,
+  [SPN] [varchar](50) NOT NULL CONSTRAINT [DF_SPNTAD_SPN] DEFAULT (getdate()),
+  [TAD] [varchar](50) NOT NULL,
+  [Created] [datetime] NOT NULL CONSTRAINT [DF_SPNTAD_Created] DEFAULT (getdate()),
+  CONSTRAINT [PK_SPNTAD] PRIMARY KEY CLUSTERED ([SPN], [TAD])
+)
+ON [PRIMARY]
+GO

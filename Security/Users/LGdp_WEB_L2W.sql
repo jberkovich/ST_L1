@@ -1,0 +1,3 @@
+﻿CREATE USER [LGdp_WEB_L2W]
+  WITH PASSWORD = 'Type_Passw0rd_Here'
+GO
